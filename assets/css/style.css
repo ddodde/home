@@ -1,0 +1,148 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+
+/* 화면 전체 설정 및 중앙 정렬 */
+body 
+{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: papayawhip; /* 배경색 
+    font-family: 'Courier New', Courier, monospace; /* 아스키 아트 정렬을 위한 고정폭 폰트 */
+}
+
+/* 상단 아스키 타이틀 영역 */
+
+.ascii-title {
+    font-size: 11px; /* 글자가 너무 크면 잘리므로 적당히 조절 */
+    line-height: 1.1;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre;  아스키 아트 공백 유지 필수 
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+
+}
+
+.ascii-right {
+	position : absolute;
+	top: 550px;
+	right: 170px;
+	font-size: 6pt;
+	color: darkgray;
+
+}
+
+.ascii-left {
+	position : absolute;
+	top: 550px;
+	left: 220px;
+	font-size: 11pt;
+	color: #333;
+
+}
+
+.ascii-left2 {
+	position : absolute;
+	top: 500px;
+	left: 100px;
+	font-size: 11pt;
+	color: #333;
+
+}
+
+
+ /*집 전체 컨테이너 (중앙 정렬 유지) */
+.house-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+/*사다리꼴 지붕 구현 (CSS border 활용) */
+.roof {
+    width: 530px;
+    height: 200px;
+    border-bottom: 165px solid darkkhaki; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    margin-bottom: -2px; /* 본체와의 미세한 틈 제거 */
+}
+
+/* 집 본체 */
+.house-body {
+    width: 450px;
+    height: 300px;
+    background-color: #ffffff; /* 집 벽 색상 */
+    border: 1.5px dashed gray;
+    /*border-radius: 4px;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* 창문 3개를 담는 상단 영역 */
+.windows-wrapper {
+    display: flex;
+    gap: 50px; /* 창문 사이 간격 */
+    position: absolute;
+    top: 45px;
+}
+
+/* 개별 창문 스타일 (링크) */
+.window {
+    width: 85px;
+    height: 55px;
+    border: 2px dotted gray;
+    background-color: aliceblue;
+    transition: transform 0.5s, background-color 0.2s;
+    font-size: 10pt;
+    
+}
+
+.window:hover {
+    transform: scale(1.1);
+    background-color: lightblue;
+}
+
+/* 문 스타일 (링크) */
+.door {
+    width: 60px;
+    height: 85px;
+    border: 1.8px dashed gray;
+    border-bottom: none;
+    /*border-top-left-radius: 25px;
+    border-top-right-radius: 25px;*/
+    background-color: lemonchiffon;
+    transition: transform 0.2s, background-color 0.2s;
+    
+}
+
+.door:hover {
+    transform: scale(1.05);
+    background-color: #ffe082;
+}
+
+a {
+	text-decoration:  none;
+	color: tomato;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	
+}
