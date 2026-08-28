@@ -4,9 +4,6 @@
  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 600px) {
-
-} 
 
 /* 화면 전체 설정 및 중앙 정렬 */
 body 
@@ -207,4 +204,36 @@ a {
 
 .ascii-insta a:hover {
   opacity: 0.5;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .house-container {
+        transform: scale(0.64);
+    }
+
+.ascii-title {
+    font-size: 7.2px; /* 글자가 너무 크면 잘리므로 적당히 조절 */
+    line-height: 1.1;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre;  아스키 아트 공백 유지 필수 
+    align-items: flex-start;
+    position: absolute;
+    top: 153px;
+
+}
+/*.roof {
+    width: 300px;
+    height: 100px;
+    border-bottom: 50px solid darkkhaki; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    margin-bottom: -2px;
+
+
+} */
 }
