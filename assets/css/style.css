@@ -254,14 +254,14 @@ a {
 }
 
  .house-body {
-  border-left: 2px dashed #000;
-  border-right: 2px dashed #000;
+  border-left: 1px dashed #000;
+  border-right: 1px dashed #000;
 }
 
  .door {
-  border-left: 2px dashed #000;
-  border-right: 2px dashed #000;
-}
+  border-left: 1px dashed #000;
+  border-right: 1px dashed #000;
+
 
  
  }
